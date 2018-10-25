@@ -1,0 +1,36 @@
+<view>
+
+  <!-- 图片滚动 -->
+  <view class="swiperCss">
+    <swiper indicator-dots="{{indicatorDots}}" class="swiper" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class='slide-image' mode='scaleToFill' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- 完美课程 学堂助手 -->
+
+  <view class='imageUrl'>
+    <view class="imageUrl-item" wx:for="{{imageUrl}}">
+
+
+      <image src='{{item}}'> </image>
+      <text>内容修改</text>
+
+
+    </view>
+  </view>
+
+<!-- 内容滚动 -->
+<view class='swapContent'  >
+
+<image src='../../images/imageAlert/1.png'></image>
+<!-- <view class='swapContent-text' > </view> -->
+<text class='' animation="{{animationData}}">最强优惠强势来袭，现在报名可享受立减千元优惠</text>
+</view>
+
+
+</view>
